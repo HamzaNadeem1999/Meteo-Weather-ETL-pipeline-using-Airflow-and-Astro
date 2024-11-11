@@ -1,11 +1,20 @@
-Welcome to my Astronomer project! This was set up with astro dev init using the Astronomer CLI. Here’s a quick guide to what’s included and how to run Apache Airflow locally.
+# Astronomer Project
 
-Project Structure
+Welcome to my Astronomer project! This was set up with `astro dev init` using the Astronomer CLI. Here’s a quick guide to the project structure and instructions for running Apache Airflow locally.
 
-dags: Contains Python files for Airflow DAGs, including an example DAG that queries the Open Notify API to list astronauts currently in space.
-Dockerfile: Uses an Astro Runtime Docker image for running Airflow. Add any runtime overrides here.
-include: Holds additional files you might want in the project.
-packages.txt: List OS packages for installation here.
-requirements.txt: Specify Python packages here.
-plugins: Add custom Airflow plugins here.
-airflow_settings.yaml: Define Airflow connections, variables, and pools locally.
+## Project Structure
+
+- **dags**: Contains Python files for Airflow DAGs, including an example DAG that queries the Open Notify API to list astronauts currently in space.
+- **Dockerfile**: Uses an Astro Runtime Docker image for running Airflow. Add any runtime overrides here.
+- **include**: Holds additional files you might want in the project.
+- **packages.txt**: List OS packages for installation here.
+- **requirements.txt**: Specify Python packages here.
+- **plugins**: Add custom Airflow plugins here.
+- **airflow_settings.yaml**: Define Airflow connections, variables, and pools locally.
+
+## Running Airflow Locally
+
+1. Start Airflow by running:
+   ```bash
+   astro dev start
+
